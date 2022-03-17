@@ -337,6 +337,10 @@ span{
     .footer-content{
         padding: 0;
     }
+    .social-button{
+        display: flex;
+        flex-direction: column;
+    }
     .main-container{
         padding: 20px;
         display: flex;
