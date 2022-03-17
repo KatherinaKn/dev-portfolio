@@ -1,0 +1,454 @@
+:root{
+    /*COLORS*/
+    --backgroud-light: #d9d9d9;
+    --background-dark: #234;
+    --box-light: #FFFFFF;
+    --box-dark: #456;
+    --b-demo-light: #22abfa;
+    --b-demo-dark:#22abfa;
+    --b-code-light:#95d1f3;
+    --b-code-dark:#95d1f3;
+
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    color:#234;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+/*FONT-SIZE*/
+.titulo{
+    font-size: 1.7em;
+}
+.parrafo{
+    font-size: 15px;
+    color: var(--box-dark);
+}
+
+/* DISPLAY*/
+.main-container{
+    background-color: var(--backgroud-light);
+    padding: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: repeat(4, auto);
+    gap: 30px;
+}
+.contenedor{
+    padding: 20px;
+    border-radius: 15px;
+    height: fit-content;
+    background-color: var(--box-light);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+
+}
+.profile{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding: 30px 25px;
+}
+.frontend{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 20px 35px;
+}
+.design{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 20px 35px;
+
+}
+.projects{
+    grid-column: 2/4;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroud-light);
+    justify-content: space-between;
+    padding: 0;
+    box-shadow: none;
+
+}
+.experience{
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+}
+.blog{
+    grid-column: 2/4;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroud-light);
+    padding: 0;
+    box-shadow: none;
+
+}
+.hobbie{
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+}
+/* PROFILE CONTENEDOR*/
+.profile-picture{
+    padding: 0 20px;
+
+}
+.profile img{
+    object-fit: scale-down;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.contacto {
+    margin: 40px 0;
+}
+span{
+    margin: 0 5px;
+}
+/* FRONTEND CONTENEDOR*/
+.cont-barra{
+    width: 15vw;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--backgroud-light);
+}
+.porc{
+    background-color: var(--b-demo-dark);
+}
+.cont-porcentajes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill{
+    font-size: 1.1em;
+    text-align: center;
+    margin: 10px 0;
+}
+.react{
+    width: 60%;
+    height: 5px;
+    border-radius: 5px;
+}
+.js{
+    width: 85%;
+    height: 5px;
+    border-radius: 5px;
+}
+.css{
+    width: 95%;
+    height: 5px;
+    border-radius: 5px;
+}
+.redux{
+    width: 30%;
+    height: 5px;
+    border-radius: 5px;
+}
+.reactN{
+    width: 70%;
+    height: 5px;
+    border-radius: 5px;
+}
+/* DESIGN CONTENEDOR*/
+
+.figma{
+    width: 95%;
+    height: 5px;
+    border-radius: 5px;
+}
+.ps{
+    width: 50%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+/* PROJECTS*/
+.tit-blog,
+.example,
+.tit-project{
+    background-color: var(--box-light);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+
+}
+
+.blog-art{
+    background-color: var(--box-light);
+    padding: 25px;
+    padding-right: 0;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    margin: 20px 0;
+    display: flex;
+
+}
+.example{
+    margin: 20px 0;
+    display: flex;
+}
+.example img{
+    object-fit: scale-down;
+    max-width: 19vw;
+    height: auto;
+    margin-right: 25px;
+}
+.tit-blog,
+.tit-project{
+    padding: 18px;
+}
+.tit-blog h1,
+.tit-project h1{
+    margin: 0;
+}
+.button{
+    padding: 25px 10px 10px 10px;
+}
+.button a{
+    text-decoration: none;
+}
+.b-demo{
+    padding: 10px;
+    background-color: var(--b-demo-light);
+    color: #FFFFFF;
+    border-radius: 15px;
+    margin: 0 15px;
+}
+
+.b-code{
+    padding: 10px;
+    background-color: var(--b-code-light);
+    color: var(--b-demo-light);
+    border-radius: 15px;
+    margin: 0 10px;
+}
+.blog-img img{
+    object-fit: scale-down;
+    max-width: 30vw;
+    height: auto;
+    margin-left: 30px;
+    border-radius: 20px 0 0 20px;
+}
+.blog-p{
+    padding: 15px
+}
+.blog-p p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.blog-p i,
+.blog-p a{
+    margin-top: 25px;
+    text-decoration: none;
+    color: var(--b-demo-light);
+    font-size: 18px;
+}
+.title{
+    font-style: oblique;
+    margin: 20px 5px;
+}
+
+/* EXPERIENCE*/
+.contjob{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+.contjob img{
+    object-fit: fill;
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 10px;
+}
+
+.job-title{
+    font-weight: bolder;
+    margin: 10px 0;
+}
+.job p{
+    font-size: 14px;
+}
+
+/* HOBBIES*/
+.hobbie img{
+    object-fit: cover;
+    width: 25vw;
+    height: 130px;
+    border-radius: 15px;
+}
+.hobbie-title{
+    font-weight: bolder;
+    margin: 10px 0 7px 0;
+}
+.hobbie p{
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+.footer{
+    padding: 20px 40px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--background-dark);
+}
+
+.created{
+    background-color: var(--background-dark);
+    color: var(--backgroud-light);
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    border-top: .5px solid var(--backgroud-light);
+    padding: 15px 0;
+}
+.footer-content a,
+.footer-content i{
+    color: var(--backgroud-light);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.f-links{
+    display: flex;
+    flex-direction: column;
+}
+.social-button span i{
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.footer-content a:hover{
+    text-decoration: underline 2px solid;
+}
+.social-button span i:hover{
+    color: var(--background-dark);
+    background-color: var(--backgroud-light);
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .main-container{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .titulo{
+        font-size: 1.3em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    h3{
+        font-size: 1.1em;
+    }
+    .skill,
+    h4{
+        font-size: 1em;
+    }
+    .parrafo,
+    p{
+        font-size: .85em;
+    }
+    .profile{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+    span{
+        margin: 0 3px 0 0;
+    }
+    .profile-picture{
+        padding: 0;
+        margin-right: 15px;
+    }
+    .contacto{
+        margin: 25px 0;
+    }
+    .frontend,
+    .design{
+        padding: 20px 40px;
+    }
+    .cont-barra{
+        width: 40vw;
+    }
+    .example{
+        margin: 10px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .example img{
+        object-fit: scale-down;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .blog-art{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .blog-img img{
+        object-fit: scale-down;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .hobbie img{
+        width: 80vw;
+        height: 150px;
+    }
+}
+@media screen and (max-width:400px){
+    .main-container{
+        padding: 18px;
+        gap: 10px;
+    }
+    .titulo{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 1.1em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    .skill,
+    h4{
+        font-size: .9em;
+        margin: 7px 0;
+    }
+    .parrafo,
+    p{
+        font-size: .75em;
+    }
+    .profile{
+        flex-direction: column;
+    }
+    .profile-picture{
+        margin: 0 10px;
+    }
+    .contacto{
+        margin: 15px 0;
+    }
+    .frontend,
+    .design{
+        padding: 15px 20px;
+    }
+    .b-demo,
+    .b-code{
+        margin: 0 10px;
+        padding: 7px;
+    }
+    a,
+    .blog-p a{
+        font-size: .9em;
+    }
+}
